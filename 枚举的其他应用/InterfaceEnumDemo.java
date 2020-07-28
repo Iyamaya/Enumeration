@@ -1,3 +1,6 @@
+interface Print{
+	public String getColor() ;
+}
 enum Color implements Print{
 	RED{
 		public String getColor(){
@@ -12,9 +15,8 @@ enum Color implements Print{
 			return "À¶É«" ;
 		}
 	} ;
-	public abstract String getColor() ;
 }
-public class AbstractMethodEnum{
+public class InterfaceEnumDemo{
 	public static void main(String args[]){
 		for(Color c:Color.values()){
 			System.out.print(c.getColor() + "¡¢") ;
